@@ -1,9 +1,6 @@
-module.exports = {
-    darkMode: "class", // Bật chế độ dark mode bằng class "dark"
-    content: ["./src/**/*.{js,jsx,ts,tsx}"],
-    theme: {
-      extend: {},
-    },
-    plugins: [],
-  };
-  
+export default {
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
+}
