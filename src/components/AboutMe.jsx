@@ -90,14 +90,42 @@ export default function AboutMe() {
             {/* Projects */}
             <motion.div 
                 initial={{ opacity: 0, y: 20 }} 
-                animate={{ opacity: 1, y: 0 }} 
+                whileInView={{ opacity: 1, y: 0 }} 
                 transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
                 className="max-w-2xl text-center"
             >
                 <h2 className="text-3xl font-bold">Projects 🚀</h2>
-                <div className="mt-4 text-lg space-y-3">
-                    <p>🔹 <strong>ADB Helper</strong> - Simplifying ADB commands</p>
-                    <p>🔹 <strong>BMI Calculator</strong> - Simple and effective BMI tracking</p>
+                <div className="mt-4 text-lg space-y-4">
+                    {[
+                        { 
+                            name: "ADB Helper", 
+                            description: "Simplifying ADB commands", 
+                            link: "https://github.com/dmquang/ADB-Helper" 
+                        },
+                        { 
+                            name: "BMI Calculator", 
+                            description: "Simple and effective BMI tracking", 
+                            link: "https://github.com/dmquang/BMI-Caculator" 
+                        }
+                    ].map((project, index) => (
+                        <motion.a 
+                            key={index} 
+                            href={project.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="flex items-center gap-3 p-3 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition"
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.4, delay: index * 0.1 }}
+                            viewport={{ once: true }}
+                        >
+                            <FaGithub className="text-gray-400 text-2xl" />
+                            <p>
+                                <strong>{project.name}</strong> - {project.description}
+                            </p>
+                        </motion.a>
+                    ))}
                 </div>
             </motion.div>
 
@@ -114,7 +142,7 @@ export default function AboutMe() {
                 <h2 className="text-3xl font-bold">Founder & Projects 🔥</h2>
                 <p className="mt-4 text-lg">
                     I am the founder of:  
-                    <br /><strong>Jarsoft</strong> – A software development organization.  
+                    <br /><strong>JARSoft</strong> – A software business.  
                     <br /><strong>XTool</strong> – Programming utilities & automation tools.  
                 </p>
             </motion.div>
@@ -154,9 +182,24 @@ export default function AboutMe() {
                     ))}
                 </div>
             </motion.div>
+            
+            <motion.footer 
+                initial={{ opacity: 0, y: 20 }} 
+                whileInView={{ opacity: 1, y: 0 }} 
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="w-full py-6 text-center border-t border-gray-600 opacity-75 mt-10"
+            >
+                <p className="text-lg text-gray-400">
+                    © {new Date().getFullYear()} <span className="text-white font-semibold">Rudyy Greyrat</span>. All rights reserved.
+                </p>
+                <p className="text-gray-500 text-sm mt-1">
+                    Maintained by <a href="https://github.com/dmquang" target="_blank" rel="noopener noreferrer" 
+                    className="text-blue-400 hover:text-blue-300 transition">Rudyy Greyrat</a>
+                </p>
+            </motion.footer>
 
-            <hr className="w-3/4 border-t border-gray-600 opacity-50 my-6" />
-
+            
         </motion.section>
     );
 }
