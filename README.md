@@ -6,7 +6,6 @@ Welcome to my personal portfolio website! Built with modern technologies like **
 - **Sleek & Modern UI** 🎨
 - **Smooth Animations with Framer Motion** 🎬
 - **Fully Responsive Design** 📱
-- **Dark & Light Mode** 🌗
 
 ## 🛠️ Technologies Used
 - **Frontend:** React, TailwindCSS, Framer Motion
