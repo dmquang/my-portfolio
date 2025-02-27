@@ -5,7 +5,6 @@ import ThemeToggle from './components/ThemeToggle';
 import Banner from './components/Banner';
 import AboutMe from './components/AboutMe';
 
-
 function App() {
   return (
     <div className="w-full min-h-screen flex flex-col bg-gradient-to-b from-gray-900 to-black">
