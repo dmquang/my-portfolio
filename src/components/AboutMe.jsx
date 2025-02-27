@@ -6,7 +6,7 @@ import {
     SiFlask, SiFastapi, SiMysql, SiMongodb, 
     SiMeilisearch, SiTailwindcss, SiQt, SiCplusplus 
 } from "react-icons/si";
-import { FaTelegram, FaInstagram, FaEnvelope, FaGithub } from "react-icons/fa";
+import { FaTelegram, FaInstagram, FaEnvelope, FaGithub , FaTwitter} from "react-icons/fa";
 import selfie from "../assets/selfie.jpg";
 
 export default function AboutMe() {
@@ -161,7 +161,7 @@ export default function AboutMe() {
                 <div className="flex flex-col items-center gap-4 mt-4 text-xl">
                     {[
                         { icon: <FaTelegram className="text-blue-400" />, name: "@rudyy_greyrat", link: "https://t.me/rudyy_greyrat" },
-                        { icon: <FaInstagram className="text-pink-400" />, name: "@_mi.quang_", link: "https://www.instagram.com/_mi.quang_/" },
+                        { icon: <FaTwitter className="text-pink-400" />, name: "@dmq_king", link: "https://x.com/dmq_king" },
                         { icon: <FaEnvelope className="text-yellow-400" />, name: "mq.rudyy.08@gmail.com", link: "mailto:mq.rudyy.08@gmail.com" },
                         { icon: <FaGithub className="text-gray-400" />, name: "github.com/dmquang", link: "https://github.com/dmquang" }
                     ].map((contact, index) => (
