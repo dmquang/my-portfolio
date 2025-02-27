@@ -1,7 +1,5 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import { motion } from "framer-motion";
-import ThemeToggle from './components/ThemeToggle';
 import Banner from './components/Banner';
 import AboutMe from './components/AboutMe';
 
