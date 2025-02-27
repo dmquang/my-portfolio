@@ -23,7 +23,7 @@ function NavBar() {
         className="fixed top-0 left-0 w-full bg-black/50 dark:bg-gray-900/50 backdrop-blur-md text-white p-4 shadow-lg"
       >
         <div className="container mx-auto flex items-center justify-between">
-          <div className="text-2xl font-bold text-purple-400 text-center">WELCOME</div>
+          <div className="text-2xl font-bold text-purple-400 text-center">Rudyy</div>
   
           <div className="hidden md:flex gap-8 text-lg">
             {Navigaion()}
