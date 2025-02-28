@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
+import logo from "../assets/logo.png";
 
 function Navigaion() {
   return (
@@ -23,7 +24,16 @@ function NavBar() {
         className="fixed top-0 left-0 w-full bg-black/50 dark:bg-gray-900/50 backdrop-blur-md text-white p-4 shadow-lg"
       >
         <div className="container mx-auto flex items-center justify-between">
-          <div className="text-2xl font-bold text-purple-400 text-center">Rudyy</div>
+        <div
+          className="flex items-center cursor-pointer"
+          onClick={() => (window.location.href = "/")}
+        >
+          <img
+            src={logo}
+            alt="Logo"
+            className="w-14 h-14 drop-shadow-[0_0_25px_rgba(0,170,255,1)] brightness-400 animate-[pulse_3s_infinite]"
+          />
+        </div>
   
           <div className="hidden md:flex gap-8 text-lg">
             {Navigaion()}
