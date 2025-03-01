@@ -11,11 +11,11 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false); // Giả lập tải dữ liệu
-    }, 3000); // Chờ 3 giây để giả lập trang load
+    }, 0); // Chờ 3 giây để giả lập trang load
   }, []);
 
   return (
-    <div className="w-full min-h-screen flex flex-col bg-gradient-to-b from-gray-900 to-black">
+    <div className="w-full min-h-screen flex flex-col">
       {isLoading ? <Skeleton height={200} /> : <Banner />}
       {isLoading ? <Skeleton height={60} /> : <NavBar />}
       <div className="flex-grow">
