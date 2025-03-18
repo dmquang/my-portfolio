@@ -9,7 +9,7 @@ import {
 import { FaTelegram, FaInstagram, FaEnvelope, FaGithub , FaTwitter} from "react-icons/fa";
 import selfie from "../assets/selfie.jpg";
 
-export default function AboutMe() {
+export default function ưAboutMe() {
     return (
         <motion.section 
             initial={{ opacity: 0, y: -20 }} 
